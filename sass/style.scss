@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+Theme Name: sfool
+Theme URI: http://sfool.net/
+Description: 粋で馬鹿なテーマ
+Version: 4.1.0
+Author: yh
+Author URI: http://sfool.net/
+*/
+
+// 設定用
+@import "conf";
+
+// normalize.css
+@import "normalize";
+
+// mixin・extend・汎用クラス
+@import "utility";
+
+// 共通のスタイル
+@import "common";
+
+// 固定ページ
+@import "about";
+@import "contact";

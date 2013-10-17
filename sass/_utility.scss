@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* ========================================================================== 
+	mixin
+   ========================================================================== */
+
+// transition
+// @mixin transition($val) {
+// 	$setPrefix: -webkit-, -moz-, -o-, '';
+// 	@each $prefix in $setPrefix {
+// 		#{$prefix}transition: $val;
+// 	}
+// }
+
+// boxShadow
+@mixin boxShadow($val) {
+	$setPrefix: -webkit- '';
+	@each $prefix in $setPrefix {
+		#{$prefix}box-shadow: $val;
+	}
+}
+
+@mixin gridUnit($span) {
+	width: ($columnWidth * $span) + ($gutterWidth * ($span - 1));
+}
+
+@mixin addQuery($point) {
+	@media screen and (min-width: $point) { @content; }
+}
+
+
+/* ========================================================================== 
+	extend
+   ========================================================================== */
+
+// clearfix
+.clearfix {
+	*zoom: 1;
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+}
+
