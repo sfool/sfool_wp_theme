@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* About
+   ========================================================================== */
+.about_ico {
+	float: left;
+	width: 150px;
+}
+
+.about_txt {
+	margin: 0 0 0 170px;
+}
+
+// @media (max-width: $breakPoint04) {
+// 	.about_ico {
+// 		float: none;
+// 		margin: 0 auto;
+// 		width: 150px;
+// 	}
+// 	.about_txt {
+// 		margin: 0;
+// 	}
+// }
