@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* =========================================================
+ wrap
+========================================================= */
+
+.c-wrap_page {
+	width: 90%;
+	max-width: $BASE_WIDTH_PAGE;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.c-wrap_main {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include addQuery($MQ_MOBILE_LANDSCAPE) {
+    width: 90%;
+  }
+}

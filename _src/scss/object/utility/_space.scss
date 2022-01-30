@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* =========================================================
+ space
+========================================================= */
+
+.u-ml_auto {
+	margin-left: auto
+}
+.u-mr_auto {
+	margin-right: auto
+}
+.u-mx_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.u-mt_0 {
+	margin-top: 0;
+}
+.u-mr_0 {
+	margin-right: 0;
+}
+.u-mb_0 {
+	margin-bottom: 0;
+}
+.u-ml_0 {
+	margin-left: 0;
+}
+.u-pt_0 {
+	padding-top: 0;
+}
+.u-pr_0 {
+	padding-right: 0;
+}
+.u-pb_0 {
+	padding-bottom: 0;
+}
+.u-pl_0 {
+	padding-left: 0;
+}
+
+// 1rem～6remまで上下左右のスタイルを出力
+@for $i from 1 through 6 {
+	.u-mt_#{$i} {
+		margin-top: #{$i}rem;
+	}
+	.u-mr_#{$i} {
+		margin-right: #{$i}rem;
+	}
+	.u-mb_#{$i} {
+		margin-bottom: #{$i}rem;
+	}
+	.u-ml_#{$i} {
+		margin-left: #{$i}rem;
+	}
+	.u-pt_#{$i} {
+		padding-top: #{$i}rem;
+	}
+	.u-pr_#{$i} {
+		padding-right: #{$i}rem;
+	}
+	.u-pb_#{$i} {
+		padding-bottom: #{$i}rem;
+	}
+	.u-pl_#{$i} {
+		padding-left: #{$i}rem;
+	}
+}

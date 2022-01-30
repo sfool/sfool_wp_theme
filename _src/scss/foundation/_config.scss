@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+// ---------------------------------------------------------------
+//  config
+// ---------------------------------------------------------------
+
+// 基本の幅・余白
+// --------------------
+$BASE_WIDTH_PAGE: 1020px;
+
+// フォント
+// --------------------
+$FONT_FAMILY_GOTHIC: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Open Sans', Meiryo, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Verdana, sans-serif;
+$FONT_FAMILY_EN_SANS_SERIF: 'Open Sans', sans-serif;
+
+
+// レスポンシブのブレークポイント
+// --------------------
+$MQ_MOBILE_PORTRAIT: 320px;
+$MQ_MOBILE_LANDSCAPE: 568px;
+
+$MQ_TABLET_PORTRAIT: 768px;
+$MQ_TABLET_LANDSCAPE: 1024px;
+
+$MQ_DESKTOP: 1280px;
+
+
+// カラー
+// --------------------
+
+// カラーパレット
+$PALETTE_BLACK_01: #1a1a1a;
+$PALETTE_GRAY_01: #333;
+$PALETTE_GRAY_02: #666;
+$PALETTE_RED_01: #d6303c;
+$PALETTE_BLUE_01: #2071b3;
+$PALETTE_GREEN_01: #307e85;
+$PALETTE_PINK_01: #fb6b92;
+$PALETTE_RED_02: #d3381c;
+$PALETTE_YERROW_01: #f49625;
+$PALETTE_PURPLE: #9644c9;
+
+// テキスト
+$COLOR_TEXT: $PALETTE_GRAY_01;
+$COLOR_TEXT_LOW: $PALETTE_GRAY_02;
+$COLOR_TEXT_HIGH: $PALETTE_BLACK_01;
+
+// ボタン
+$COLOR_BTN_BG: $PALETTE_RED_01;
+
+// リンク
+$COLOR_LINK: $PALETTE_BLUE_01;
+
+// サイトカラー
+$COLOR_BRAND: $PALETTE_RED_01;

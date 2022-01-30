@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* =========================================================
+ clearfix
+========================================================= */
+
+.u-visibility_hide {
+  visibility: hidden;
+}
+
+.u-visibility_show {
+  visibility: visible;
+}
+
+.u-display_block {
+  display: block;
+}
+
+.u-display_none {
+  display: none;
+}
+
+.u-show_sm {
+  display: none;
+
+  @include addQuery($MQ_MOBILE_LANDSCAPE) {
+    display: block;
+  }
+}
+
+.u-show_md {
+  display: none;
+
+  @include addQuery($MQ_TABLET_PORTRAIT) {
+    display: block;
+  }
+}
+
+.u-show_lg {
+  display: none;
+
+  @include addQuery($MQ_TABLET_LANDSCAPE) {
+    display: block;
+  }
+}
+
+.u-hide_sm {
+  display: block;
+
+  @include addQuery($MQ_MOBILE_LANDSCAPE) {
+    display: none;
+  }
+}
+
+.u-hide_md {
+  display: block;
+
+  @include addQuery($MQ_TABLET_PORTRAIT) {
+    display: none;
+  }
+}
+
+.u-hide_lg {
+  display: block;
+
+  @include addQuery($MQ_TABLET_LANDSCAPE) {
+    display: none;
+  }
+}

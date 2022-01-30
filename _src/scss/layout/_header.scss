@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* =========================================================
+ header
+========================================================= */
+
+@keyframes flashing {
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+.header__inner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @include addQuery($MQ_MOBILE_LANDSCAPE) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+
+/* header__logo
+--------------------------------------------------------- */
+.header__logo {
+  margin-bottom: 2rem;
+  text-align: center;
+
+  a {
+    display: inline-block;
+  }
+
+  img {
+    width: 154px;
+
+    @include addQuery($MQ_MOBILE_LANDSCAPE) {
+      width: 220px;
+    }
+  }
+}
+
+
+/* header__text
+--------------------------------------------------------- */
+.header__text {
+  overflow: hidden;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* header__arrow
+--------------------------------------------------------- */
+.header__arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 10px solid #4d4d4d;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.header__arrow--anime {
+  animation-name: flashing;
+  animation-duration: 1.4s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}

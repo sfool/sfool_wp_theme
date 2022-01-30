@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* =========================================================
+ main
+========================================================= */
+
+#main {
+  margin-bottom: 6rem;
+
+  @include addQuery($MQ_TABLET_PORTRAIT) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

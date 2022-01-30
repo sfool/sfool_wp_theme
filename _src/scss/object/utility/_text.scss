@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* =========================================================
+ text
+========================================================= */
+
+.u-font_ultra_light {
+  font-weight: 100;
+}
+
+.u-font_light {
+  font-weight: 300;
+}
+
+.u-font_normal {
+  font-weight: normal;
+}
+
+.u-font_bold {
+  font-weight: bold;
+}
+
+.u-font_sm {
+  font-size: 0.8em;
+}
+
+.u-font_md {
+  font-size: 1.4em;
+}
+
+.u-font_lg {
+  font-size: 1.6em;
+}
+
+.u-text_left {
+  text-align: left;
+}
+
+.u-text_center {
+  text-align: center;
+}
+
+.u-text_right {
+  text-align: right;
+}
+
+.u-vertical_align_top {
+  vertical-align: top;
+}
+
+.u-vertical_align_middle {
+  vertical-align: middle;
+}
+
+.u-vertical_align_bottom {
+  vertical-align: bottom;
+}
+
+.u-text_center_sm {
+  @include addQuery($MQ_MOBILE_LANDSCAPE) {
+    text-align: center;
+  }
+}
+
+.u-text_center_md {
+  @include addQuery($MQ_TABLET_PORTRAIT) {
+    text-align: center;
+  }
+}
+
+.u-text_center_lg {
+  @include addQuery($MQ_TABLET_LANDSCAPE) {
+    text-align: center;
+  }
+}

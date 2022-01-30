@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+// ---------------------------------------------------------------
+//  mixin
+// ---------------------------------------------------------------
+
+// # addQuery
+// 
+// @desc - ブレイクポイントを挿入します。
+// @type Mixin
+// @param {String} $point - ブレイクポイントの数値（主にconfigの変数を使用する）
+// 
+// @example scss - Usage
+// .foo {
+// 	color: red;
+// 
+// 	@include addQuery($MQ_TABLET_PORTRAIT) {
+// 		color: blue;
+// 	}
+// }
+
+// @example css - CSS output
+// .foo {
+// 	color: red;
+// }
+// @media screen and (min-width: 768px) {
+// 	.foo {
+// 		color: blue;
+// 	}
+// }
+
+@mixin addQuery($point) {
+	@media screen and (min-width: $point) { @content; }
+}
+
+// # setIconfont
+// @desc - アイコンフォントの設定
+// @type Mixin
+
+@mixin setIconfont() {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+

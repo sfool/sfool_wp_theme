@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*!
+Theme Name: sfool
+Theme URI: http://sfool.net/
+Description: 粋で馬鹿なテーマ
+Version: 5.0.1
+Author: yh
+Author URI: http://sfool.net/
+*/
+
+/* =========================================================
+ style
+========================================================= */
+
+// ---------------------------------------------------------------
+//  Foundation
+// ---------------------------------------------------------------
+
+@import "foundation/_config";
+@import "foundation/_normalize";
+@import "foundation/_mixin";
+@import "foundation/_fonts";
+@import "foundation/_keyframes";
+@import "foundation/_base";
+
+
+// ---------------------------------------------------------------
+//  Layout
+// ---------------------------------------------------------------
+
+@import "layout/_header";
+@import "layout/_main";
+@import "layout/_footer";
+
+
+// ---------------------------------------------------------------
+//  object
+// ---------------------------------------------------------------
+
+@import "object/component/_wrap";
+
+@import "object/project/_adsense";
+@import "object/project/_font";
+@import "object/project/_ico";
+@import "object/project/_loading";
+@import "object/project/_post";
+@import "object/project/_search";
+
+@import "object/utility/_clearfix";
+@import "object/utility/_color";
+@import "object/utility/_display";
+@import "object/utility/_float";
+@import "object/utility/_font";
+@import "object/utility/_overflow";
+@import "object/utility/_space";
+@import "object/utility/_text";
+
+
+// ---------------------------------------------------------------
+//  Page
+// ---------------------------------------------------------------
+
+@import "page/_home";
