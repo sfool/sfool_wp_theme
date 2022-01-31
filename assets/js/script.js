@@ -1,131 +1,19 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./_src/js/main.js");
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "./_src/js/main.js":
-/*!*************************!*\
-  !*** ./_src/js/main.js ***!
-  \*************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var utility_log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! utility/log */ "./_src/js/utility/log.js");
-/* harmony import */ var utility_isTouchDevice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! utility/isTouchDevice */ "./_src/js/utility/isTouchDevice.js");
-/* harmony import */ var utility_ua__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! utility/ua */ "./_src/js/utility/ua.js");
-/* harmony import */ var project_pageLoading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! project/pageLoading */ "./_src/js/project/pageLoading.js");
-/* harmony import */ var project_smoothScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! project/smoothScroll */ "./_src/js/project/smoothScroll.js");
-// utility
-
-
- // project
-
-
- // log('main.js');
-// スムーズスクロール
-
-Object(project_smoothScroll__WEBPACK_IMPORTED_MODULE_4__["default"])(); // ローディング
-
-Object(project_pageLoading__WEBPACK_IMPORTED_MODULE_3__["default"])();
-
-/***/ }),
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./_src/js/project/pageLoading.js":
 /*!****************************************!*\
   !*** ./_src/js/project/pageLoading.js ***!
   \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return pageLoading; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ pageLoading; }
+/* harmony export */ });
 /* harmony import */ var utility_log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! utility/log */ "./_src/js/utility/log.js");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 function pageLoading() {
   var callback = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : function () {};
@@ -161,7 +49,6 @@ function pageLoading() {
     }
   });
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -169,12 +56,13 @@ function pageLoading() {
 /*!*****************************************!*\
   !*** ./_src/js/project/smoothScroll.js ***!
   \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return smoothScroll; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ smoothScroll; }
+/* harmony export */ });
 /* harmony import */ var utility_log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! utility/log */ "./_src/js/utility/log.js");
 
 function smoothScroll() {
@@ -269,12 +157,13 @@ function smoothScroll() {
 /*!******************************************!*\
   !*** ./_src/js/utility/isTouchDevice.js ***!
   \******************************************/
-/*! exports provided: isTouchDevice */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isTouchDevice", function() { return isTouchDevice; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "isTouchDevice": function() { return /* binding */ isTouchDevice; }
+/* harmony export */ });
 var isTouchDevice = function () {
   var result = false;
 
@@ -291,12 +180,13 @@ var isTouchDevice = function () {
 /*!********************************!*\
   !*** ./_src/js/utility/log.js ***!
   \********************************/
-/*! exports provided: log */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "log", function() { return log; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "log": function() { return /* binding */ log; }
+/* harmony export */ });
 var log = function () {
   if (window.console && console.log) {
     if (!Function.bind) {
@@ -323,12 +213,13 @@ var log = function () {
 /*!*******************************!*\
   !*** ./_src/js/utility/ua.js ***!
   \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ua; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ ua; }
+/* harmony export */ });
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -391,8 +282,7 @@ var ua = /*#__PURE__*/function () {
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
  * jQuery JavaScript Library v3.6.0
@@ -11238,7 +11128,7 @@ if ( true ) {
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
 		return jQuery;
 	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
 
@@ -11280,5 +11170,88 @@ return jQuery;
 
 /***/ })
 
-/******/ });
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!*************************!*\
+  !*** ./_src/js/main.js ***!
+  \*************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var utility_log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! utility/log */ "./_src/js/utility/log.js");
+/* harmony import */ var utility_isTouchDevice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! utility/isTouchDevice */ "./_src/js/utility/isTouchDevice.js");
+/* harmony import */ var utility_ua__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! utility/ua */ "./_src/js/utility/ua.js");
+/* harmony import */ var project_pageLoading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! project/pageLoading */ "./_src/js/project/pageLoading.js");
+/* harmony import */ var project_smoothScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! project/smoothScroll */ "./_src/js/project/smoothScroll.js");
+// utility
+
+
+ // project
+
+
+ // log('main.js');
+// スムーズスクロール
+
+(0,project_smoothScroll__WEBPACK_IMPORTED_MODULE_4__["default"])(); // ローディング
+
+(0,project_pageLoading__WEBPACK_IMPORTED_MODULE_3__["default"])();
+}();
+/******/ })()
+;
 //# sourceMappingURL=script.js.map
