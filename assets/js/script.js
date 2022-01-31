@@ -100,16 +100,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var utility_ua__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! utility/ua */ "./_src/js/utility/ua.js");
 /* harmony import */ var project_pageLoading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! project/pageLoading */ "./_src/js/project/pageLoading.js");
 /* harmony import */ var project_smoothScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! project/smoothScroll */ "./_src/js/project/smoothScroll.js");
-// npm install
-// import AOS from 'aos';
 // utility
 
 
  // project
 
 
-
-Object(utility_log__WEBPACK_IMPORTED_MODULE_0__["log"])('main.js'); // スムーズスクロール
+ // log('main.js');
+// スムーズスクロール
 
 Object(project_smoothScroll__WEBPACK_IMPORTED_MODULE_4__["default"])(); // ローディング
 

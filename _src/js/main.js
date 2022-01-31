@@ -1,6 +1,3 @@
-// npm install
-// import AOS from 'aos';
-
 // utility
 import {log} from 'utility/log';
 import {isTouchDevice} from 'utility/isTouchDevice';
@@ -11,7 +8,7 @@ import pageLoading from 'project/pageLoading';
 import smoothScroll from 'project/smoothScroll';
 
 
-log('main.js');
+// log('main.js');
 
 // スムーズスクロール
 smoothScroll();

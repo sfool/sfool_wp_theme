@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "sass": "^1.49.0",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": [
+    "> 0.5% in JP"
+  ]
+}

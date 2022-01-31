@@ -1,9 +1,6 @@
 # ignore
 .gitignore
-gulpfile.js
-package.json
 package-lock.json
-webpack.config.js
 /node_modules/*
 index.html
 post.html
