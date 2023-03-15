@@ -6,6 +6,7 @@
 </head>
 
 <body id="top">
+<?php get_template_part('tpl', 'gtmnoscript'); ?>
 
 <div id="wrapper">
 

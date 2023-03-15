@@ -6,6 +6,7 @@
 </head>
 
 <body id="top">
+<?php get_template_part('tpl', 'gtmnoscript'); ?>
 
 <?php if(is_front_page() && is_home() && !is_paged()) : ?>
 <div id="p-page_loading">
