@@ -17,20 +17,17 @@
 }
 
 .header__inner {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-
-  @include addQuery($MQ_MOBILE_LANDSCAPE) {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 
 /* header__logo
 --------------------------------------------------------- */
 .header__logo {
-  margin-bottom: 2rem;
+  margin-right: 1rem;
   text-align: center;
 
   a {
@@ -38,11 +35,7 @@
   }
 
   img {
-    width: 154px;
-
-    @include addQuery($MQ_MOBILE_LANDSCAPE) {
-      width: 220px;
-    }
+    width: 100px;
   }
 }
 
@@ -51,9 +44,10 @@
 --------------------------------------------------------- */
 .header__text {
   overflow: hidden;
+  padding-top: 1em;
   line-height: 1.4;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 /* header__arrow

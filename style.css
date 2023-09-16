@@ -631,41 +631,33 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
   }
 }
 .header__inner {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-@media screen and (min-width: 568px) {
-  .header__inner {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* header__logo
 --------------------------------------------------------- */
 .header__logo {
-  margin-bottom: 2rem;
+  margin-right: 1rem;
   text-align: center;
 }
 .header__logo a {
   display: inline-block;
 }
 .header__logo img {
-  width: 154px;
-}
-@media screen and (min-width: 568px) {
-  .header__logo img {
-    width: 220px;
-  }
+  width: 100px;
 }
 
 /* header__text
 --------------------------------------------------------- */
 .header__text {
   overflow: hidden;
+  padding-top: 1em;
   line-height: 1.4;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 /* header__arrow
@@ -1104,15 +1096,15 @@ ico
 post
 ========================================================= */
 .p-post__header {
-  padding-top: 4em;
-  padding-bottom: 4em;
-  margin-bottom: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
 
 .p-post_title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 @media screen and (min-width: 768px) {
@@ -1122,7 +1114,7 @@ post
 }
 
 .p-post_info {
-  margin-top: 3em;
+  margin-top: 1em;
   color: #999;
   font-size: 0.8rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -1372,7 +1364,6 @@ post
 }
 .p-posts li {
   padding-top: 2rem;
-  margin-top: 3rem;
   margin-bottom: 3rem;
   border-top: 1px solid #eaeaea;
 }
@@ -1971,14 +1962,5 @@ search
   .u-text_center_lg {
     text-align: center;
   }
-}
-
-/* =========================================================
- home
-========================================================= */
-.home_header {
-  display: flex;
-  align-items: center;
-  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,8 +4,6 @@
 
 <div class="header__text p-pixel_mplus_12"><span class="header__text__border"><?php bloginfo('description'); ?></span></div>
 
-<?php if(is_front_page() && is_home() && !is_paged()) : ?><a href="#main" class="header__arrow header__arrow--anime"></a><?php endif; ?>
-
 <!-- end .header__inner -->
 </div>
 <!-- end .header -->

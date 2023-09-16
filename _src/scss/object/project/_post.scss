@@ -4,15 +4,15 @@
 post
 ========================================================= */
 .p-post__header {
-  padding-top: 4em;
-  padding-bottom: 4em;
-  margin-bottom: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
 
 .p-post_title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
 
   @include addQuery($MQ_TABLET_PORTRAIT) {
@@ -21,7 +21,7 @@ post
 }
 
 .p-post_info {
-  margin-top: 3em;
+  margin-top: 1em;
   color: #999;
   font-size: 0.8rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -309,7 +309,6 @@ post
 
   li {
     padding-top: 2rem;
-    margin-top: 3rem;
     margin-bottom: 3rem;
     border-top: 1px solid #eaeaea;
   }
