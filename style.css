@@ -1331,10 +1331,10 @@ post
   padding-bottom: 0.5em;
 }
 
-.p-post__sns__twitter {
-  background-color: #55acee;
+.p-post__sns__x {
+  background-color: #000;
 }
-.p-post__sns__twitter img {
+.p-post__sns__x img {
   width: 20px;
 }
 
