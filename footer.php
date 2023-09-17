@@ -84,7 +84,7 @@ Webの世界で終わらない戦いをしています。<br>
 
 
 <ul class="ul footer__links">
-<li><a href="https://twitter.com/yh_sfool" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_twitter.svg" alt="Twitter"></a></li>
+<li><a href="https://twitter.com/yh_sfool" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_x.svg" alt="Twitter"></a></li>
 <li><a href="<?php bloginfo('atom_url'); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rss.svg" alt="RSS"></a></li>
 </ul>
 

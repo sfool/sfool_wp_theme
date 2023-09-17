@@ -46,7 +46,7 @@ $share_text = $title_encode . '｜' . $blog_name_encode;
 ?>
 
 <ul class="ul p-post__sns">
-<li class="p-post__sns__twitter"><a href="<?php echo esc_url('https://twitter.com/intent/tweet?url=' . $url_encode . '&amp;text=' . $share_text); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_twitter.svg" alt="Twitter"></a></li>
+<li class="p-post__sns__x"><a href="<?php echo esc_url('https://twitter.com/intent/tweet?url=' . $url_encode . '&amp;text=' . $share_text); ?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_x.svg" alt="Twitter"></a></li>
 <li class="p-post__sns__facebook"><a href="<?php echo esc_url('http://www.facebook.com/share.php?u=' . $url_encode); ?>" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_facebook.svg" alt="Facebook"></a></li>
 <li class="p-post__sns__hatena"><a href="<?php echo esc_url('http://b.hatena.ne.jp/add?mode=confirm&amp;url=' . $url_encode . '&amp;title=' . $share_text); ?>" target="_blank" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_hatenabookmark.svg" alt="はてなブックマーク"></a></li>
 </ul>
