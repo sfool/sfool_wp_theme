@@ -25,13 +25,13 @@
 <?php endwhile; ?>
 </ul>
 
+<?php get_template_part('tpl', 'adsense'); ?>
+
 <?php get_template_part('tpl', 'postnav'); ?>
 
 <?php else : ?>
 <p>記事が見つかりませんでした。</p>
 <?php endif; ?>
-
-<?php get_template_part('tpl', 'adsense'); ?>
 
 <!-- end #main -->
 </div>

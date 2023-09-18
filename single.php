@@ -51,9 +51,9 @@ $share_text = $title_encode . '｜' . $blog_name_encode;
 <li class="p-post__sns__hatena"><a href="<?php echo esc_url('http://b.hatena.ne.jp/add?mode=confirm&amp;url=' . $url_encode . '&amp;title=' . $share_text); ?>" target="_blank" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/assets/img/ico_hatenabookmark.svg" alt="はてなブックマーク"></a></li>
 </ul>
 
-<?php get_template_part('tpl', 'postnav'); ?>
-
 <?php get_template_part('tpl', 'adsense'); ?>
+
+<?php get_template_part('tpl', 'postnav'); ?>
 
 <?php comments_template(); ?>
 

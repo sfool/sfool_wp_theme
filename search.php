@@ -28,6 +28,8 @@
 <?php endwhile; ?>
 </ul>
 
+<?php get_template_part('tpl', 'adsense'); ?>
+
 <?php get_template_part('tpl', 'postnav'); ?>
 
 
@@ -42,8 +44,6 @@
 </div>
 
 <?php endif; ?>
-
-<?php get_template_part('tpl', 'adsense'); ?>
 
 
 <!-- end .p-post -->

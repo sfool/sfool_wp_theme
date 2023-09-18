@@ -1130,10 +1130,14 @@ post
   color: #999;
 }
 
-.p-post__body h2,
-.p-post__body h3 {
-  margin-top: 5em;
+.p-post__body h2 {
+  margin-top: 3em;
   font-size: 1.6rem;
+  font-weight: normal;
+}
+.p-post__body h3 {
+  margin-top: 3em;
+  font-size: 1.4rem;
   font-weight: normal;
 }
 .p-post__body h4 {
@@ -1141,7 +1145,7 @@ post
   margin-top: 4em;
   margin-bottom: 1em;
   padding-left: 25px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 .p-post__body h4::before {
@@ -1173,7 +1177,7 @@ post
   padding-right: 1.5em;
   padding-bottom: 1em;
   padding-left: 1.5em;
-  margin: 0;
+  margin: 0 0 1em 0;
   border-left: 2px solid #efefef;
   border-right: 2px solid #efefef;
 }
@@ -1198,24 +1202,10 @@ post
 .p-post__body blockquote a {
   font-size: 0.8rem;
 }
-.p-post__body .p-post_width_01 {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-@media screen and (min-width: 568px) {
-  .p-post__body .p-post_width_01 {
-    width: 110%;
-    margin-left: -5%;
-  }
-}
-@media screen and (min-width: 1180px) {
-  .p-post__body .p-post_width_01 {
-    width: 1020px;
-    margin-left: -160px;
-  }
-}
-.p-post__body .p-post_img {
+.p-post__body .p-post_img,
+.p-post__body .wp-block-image {
   padding: 1em;
+  margin: 0 0 1em 0;
   text-align: center;
   background-color: #efefef;
 }

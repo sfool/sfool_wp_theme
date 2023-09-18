@@ -39,10 +39,15 @@ post
 
 .p-post__body {
 
-  h2,
-  h3 {
-    margin-top: 5em;
+  h2 {
+    margin-top: 3em;
     font-size: 1.6rem;
+    font-weight: normal;
+  }
+
+  h3 {
+    margin-top: 3em;
+    font-size: 1.4rem;
     font-weight: normal;
   }
 
@@ -51,7 +56,7 @@ post
     margin-top: 4em;
     margin-bottom: 1em;
     padding-left: 25px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: normal;
     
     &::before {
@@ -86,7 +91,7 @@ post
     padding-right: 1.5em;
     padding-bottom: 1em;
     padding-left: 1.5em;
-    margin: 0;
+    margin: 0 0 1em 0;
     border-left: 2px solid #efefef;
     border-right: 2px solid #efefef;
 
@@ -116,23 +121,25 @@ post
     }
   }
 
-  .p-post_width_01 {
-    margin-top: 3em;
-    margin-bottom: 3em;
+  // .p-post_width_01 {
+  //   margin-top: 3em;
+  //   margin-bottom: 3em;
 
-    @include addQuery($MQ_MOBILE_LANDSCAPE) {
-      width: 110%;
-      margin-left: -5%;
-    }
+  //   @include addQuery($MQ_MOBILE_LANDSCAPE) {
+  //     width: 110%;
+  //     margin-left: -5%;
+  //   }
 
-    @include addQuery(1180px) {
-      width: $BASE_WIDTH_PAGE;
-      margin-left: -160px;
-    }
-  }
+  //   @include addQuery(1180px) {
+  //     width: $BASE_WIDTH_PAGE;
+  //     margin-left: -160px;
+  //   }
+  // }
 
-  .p-post_img {
+  .p-post_img,
+  .wp-block-image {
     padding: 1em;
+    margin: 0 0 1em 0;
     text-align: center;
     background-color: #efefef;
   }
@@ -148,7 +155,6 @@ post
     border: 0;
     background-image: linear-gradient(90deg, rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.5) 50%, rgba(128, 128, 128, 0) 100%);
   }
-
 }
 
 .p-post_comments {
